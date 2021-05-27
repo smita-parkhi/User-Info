@@ -1,0 +1,63 @@
+.info-container {
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    padding: 10px;
+    margin-top: 30px;
+    margin-left: 170px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    .user-img {
+        padding: 10px;
+        .person-img {
+            border-radius: 50%;
+            width: 60%;
+        }
+    }
+    .user-info {
+        padding: 10px;
+        .user-name {
+            padding: 0px;
+            margin: 0px;
+            font-size: 50px;
+            color: tomato;
+        }
+        .user-address {
+            padding: 0px;
+            margin: 0px;
+        }
+        .user-gender {
+            padding: 5px 0px 0px 0px;
+            margin: 0px;
+            color: "gray";
+        }
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .info-container {
+        width: 90%;
+        margin-left: 6px;
+        .user-img {
+            .person-img {
+            }
+        }
+        .user-info {
+            .user-name {
+                font-size: 15px;
+                width: 100%;
+            }
+            .user-address {
+                font-size: 10px;
+                width: 100%;
+            }
+            .user-gender {
+                font-size: 10px;
+                color: gray;
+                width: 100%;
+            }
+        }
+    }
+}
